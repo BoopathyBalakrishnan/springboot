@@ -1,0 +1,9 @@
+#paperInputElement {
+	--paper-input-container-input: {
+      font-size: 12px;
+      left: 5px;
+    };
+    
+    --paper-input-container-focus-color: red;
+    width: 420px;
+}

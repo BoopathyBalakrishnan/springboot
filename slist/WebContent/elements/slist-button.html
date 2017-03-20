@@ -1,0 +1,76 @@
+<!--
+`slist-button`
+Button component for slist web app
+
+@demo demo/index.html
+-->
+
+<dom-module id="slist-button">
+
+  <link rel="import" type="css" href="style.css">
+
+  <template>
+
+    <style>
+      .slist-button {
+        color: white;
+        background: #00bfff;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #87ceeb;
+        font-family: Calibri;
+        font-variant: normal;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: none;
+        height: 70px;
+        width: 420px;
+      }
+      
+      .slistdemo {
+        color: white;
+        background: #00bfff;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #87ceeb;
+        font-family: Calibri;
+        font-variant: normal;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: none;
+        height: 70px;
+        width: 420px;
+      }
+    </style>
+    <div id="slistdemo">
+      <paper-button id="slist-button" on-tap="fireAction">{{text}}</paper-button>
+    </div>
+  </template>
+
+  <script>
+  Polymer({
+
+    is: 'slist-button',
+
+    properties: {
+      text: {
+        type: String
+      },
+    },
+
+    fireAction:function(e,detail){
+      this.fire('btnFire', {
+        triggered:true
+      });
+    },
+
+ready: function() {
+
+},
+
+
+  });
+</script>
+</dom-module>

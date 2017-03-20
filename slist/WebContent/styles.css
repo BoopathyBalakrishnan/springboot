@@ -1,0 +1,51 @@
+/* Master Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+
+#filter{
+  border: 2px solid gray;
+  margin:100px 0 0 0;
+}
+
+#textbox{
+  float: left;
+}
+
+.card-container {
+    width:18%;
+}
+
+.card {
+    background-color:#d4d4d4;
+    border: 1px solid #d4d4d4;
+    height:70px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card-body-left {
+    margin-top: -5px;
+}
+
+.card-body-right {
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.card-body-content {
+    width: 120px;
+}
+.card-image {
+    height:50px;width:50px;margin-top:10px;
+}

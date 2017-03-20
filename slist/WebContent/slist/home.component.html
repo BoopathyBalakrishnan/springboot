@@ -1,0 +1,31 @@
+<div>
+    <div class="row">
+        <span class="pull-left"> <input type="text" id="textbox" #input /></span>
+        <span class="pull-right"> Welcome admin! <a [routerLink]="['/about']">About</a> </span>
+
+    </div>
+</div>
+<div>
+    <div class="row card-container" *ngFor="let studetails of cardDetail  ">
+
+        <div class="card">
+
+            <div class="card-body">
+                <div class="clearfix">
+                    <div class="pull-left card-body-left">
+
+                        <img src="images/male.png" class="card-image" />
+
+                    </div>
+                    <div class="pull-left card-body-right">
+                        <div class="card-body-content">
+                            <label>Name:</label> {{studetails.name}}
+                        </div>
+                        <div class="card-body-content"> <label>Class:</label>{{studetails.class}}</div>
+                        <div class="card-body-content"> <label>Status:</label>{{studetails.status}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="import" href="../bower_components/polymer/polymer.html">
+</head>
+
+<body>
+
+	<slist-input #username label="usernamee" [inputValue]="sinputname"></slist-input>
+	<slist-input #password label="passwordd" [inputValue]="sinputpass"></slist-input>
+	<slist-button text="SignIn" (btnFire)="getNames($event)"></slist-button>
+
+</body>
+
+</html>

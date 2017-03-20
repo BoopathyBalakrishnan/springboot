@@ -1,0 +1,11 @@
+ 
+spring: 
+  datasource: 
+    password: root
+    url: "jdbc:mysql://localhost:3306/test"
+    username: root
+  h2: 
+    console: 
+      enabled: true
+  jpa: 
+    database-platform: org.hibernate.dialect.MySQLDialect
